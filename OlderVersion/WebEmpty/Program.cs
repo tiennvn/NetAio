@@ -11,6 +11,7 @@ namespace WebEmpty
         {
             var SeqUrl = "http://localhost:6171";
             Log.Logger = new LoggerConfiguration()
+                        .MinimumLevel.Debug()
                         .Enrich.FromLogContext()
                         .WriteTo.Console()
                         .WriteTo.Seq(SeqUrl)
