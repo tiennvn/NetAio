@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using static System.Text.Json.JsonSerializer;
 
 namespace WebApi.Controllers
 {
@@ -21,6 +22,8 @@ namespace WebApi.Controllers
         [HttpGet(Name = "GetWeatherForecastTest")]
         public IEnumerable<WeatherForecast> Get()
         {
+            var header = Request.Headers;
+            Console.WriteLine(Serialize(header.ToList()));
             var result = Enumerable.Range(1, 100).Select(index => new WeatherForecast
             {
                 Date = DateTime.Now.AddDays(index),
@@ -28,7 +31,6 @@ namespace WebApi.Controllers
                 Summary = Summaries[Random.Shared.Next(Summaries.Length)]
             })
             .ToArray();
-            _logger.LogInformation("TEST {@result}", result);
             return result;
 
         }
