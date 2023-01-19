@@ -79,7 +79,54 @@ namespace WebEmpty
                     await context.Response.WriteAsync($"Home page! {count}");
 
                 });
+
+                endpoints.Map("/RequestInfo", async context =>
+                {
+                    // xây dựng chức năng /RequestInfo ở đây
+                    await context.Response.WriteAsync("/RequestInfo");
+                });
+
+                endpoints.MapGet("/Encoding", async context =>
+                {
+                    // xây dựng chức năng Encoding  ở đây
+                    await context.Response.WriteAsync("/Encoding");
+                });
+
+                endpoints.MapGet("/Cookies/{*action}", async context =>
+                {
+                    // xây dựng chức năng Cookies ở đây
+                    await context.Response.WriteAsync("/Cookies");
+                });
+
             });
+
+            // Điểm rẽ nhánh pipeline khi URL là /Json
+            app.Map("/Json", app =>
+            {
+                app.Run(async context =>
+                {
+                    // code ở đây
+                    await context.Response.WriteAsync("/Json");
+                });
+            });
+
+            // Điểm rẽ nhánh pipeline khi URL là /Form
+            app.Map("/Form", app =>
+            {
+                app.Run(async context =>
+                {
+                    // code ở đây
+                    await context.Response.WriteAsync("/Form");
+                });
+            });
+
+
+            app.Run(async (HttpContext context) =>
+            {
+                context.Response.StatusCode = StatusCodes.Status404NotFound;
+                await context.Response.WriteAsync("Page not found!");
+            });
+
 
             // EndPoint(3)  app.Run tham số là hàm delegate tham số là HttpContex
             // - nó tạo điểm cuối của pipeline.
