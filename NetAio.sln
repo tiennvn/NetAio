@@ -3,17 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "WebApi\WebApi.csproj", "{7A6A77FE-BD89-4CB2-8085-EBCDFA099BBD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi", "WebApi\WebApi.csproj", "{7A6A77FE-BD89-4CB2-8085-EBCDFA099BBD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp", "WebApp\WebApp.csproj", "{8C206AA8-DC0D-4727-BAAD-2DC3E77F1635}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApp", "WebApp\WebApp.csproj", "{8C206AA8-DC0D-4727-BAAD-2DC3E77F1635}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp", "ConsoleApp\ConsoleApp.csproj", "{C0664FC7-2E99-4449-9F72-337A8856EE05}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp", "ConsoleApp\ConsoleApp.csproj", "{C0664FC7-2E99-4449-9F72-337A8856EE05}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspEmpty", "AspEmpty\AspEmpty.csproj", "{7C3B6E84-6701-471F-BEC0-7B90F75DA9DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspEmpty", "AspEmpty\AspEmpty.csproj", "{7C3B6E84-6701-471F-BEC0-7B90F75DA9DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebMvc", "WebMvc\WebMvc.csproj", "{BF817927-ED8A-49F7-A989-7F3318EC53B5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebMvc", "WebMvc\WebMvc.csproj", "{BF817927-ED8A-49F7-A989-7F3318EC53B5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcService", "GrpcService\GrpcService.csproj", "{9D6D3CAE-7A2E-43F4-95CB-549B106297A9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrpcService", "GrpcService\GrpcService.csproj", "{9D6D3CAE-7A2E-43F4-95CB-549B106297A9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OlderVersion", "OlderVersion", "{50308C0A-43A3-4DB1-9074-9879478EDE7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebEmpty", "OlderVersion\WebEmpty\WebEmpty.csproj", "{91658470-6C2E-45B4-9586-9A80FD024454}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,9 +49,16 @@ Global
 		{9D6D3CAE-7A2E-43F4-95CB-549B106297A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9D6D3CAE-7A2E-43F4-95CB-549B106297A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9D6D3CAE-7A2E-43F4-95CB-549B106297A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91658470-6C2E-45B4-9586-9A80FD024454}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91658470-6C2E-45B4-9586-9A80FD024454}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91658470-6C2E-45B4-9586-9A80FD024454}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91658470-6C2E-45B4-9586-9A80FD024454}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{91658470-6C2E-45B4-9586-9A80FD024454} = {50308C0A-43A3-4DB1-9074-9879478EDE7A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {061EC94D-B3D5-4BB2-9800-C05B8F064004}
