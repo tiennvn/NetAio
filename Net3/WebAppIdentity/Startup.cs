@@ -73,6 +73,9 @@ namespace WebAppIdentity
                 options.SignIn.RequireConfirmedEmail = true;            // Cấu hình xác thực địa chỉ email (email phải tồn tại)
                 options.SignIn.RequireConfirmedPhoneNumber = false;     // Xác thực số điện thoại
 
+                options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(2);  // Khóa 2 phút
+                options.Lockout.MaxFailedAccessAttempts = 5;                        // Thất bại 3 lần thì khóa
+
             });
 
             services.AddRazorPages();
