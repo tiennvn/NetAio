@@ -1,9 +1,12 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Serilog;
+using System;
+using System.Text;
 
 namespace WebEmpty
 {
@@ -15,8 +18,20 @@ namespace WebEmpty
         public void ConfigureServices(IServiceCollection services)
         {
             _services = services;
-            services.AddDistributedMemoryCache();       // Thêm dịch vụ dùng bộ nhớ lưu cache (session sử dụng dịch vụ này)
-            services.AddSession();                      // Thêm  dịch vụ Session, dịch vụ này cunng cấp Middleware: 
+
+            // Thêm dịch vụ dùng bộ nhớ lưu cache (session sử dụng dịch vụ này)
+            // Đăng ký dịch vụ lưu cache trong bộ nhớ(Session sẽ sử dụng nó)
+            services.AddDistributedMemoryCache();
+
+            // Thêm  dịch vụ Session, dịch vụ này cunng cấp Middleware
+            // Đăng ký dịch vụ Session
+            // Đặt tên Session - tên này sử dụng ở Browser (Cookie)
+            // Thời gian tồn tại của Session
+            services.AddSession(cfg =>
+            {
+                cfg.Cookie.Name = "xuanthulab";
+                cfg.IdleTimeout = new TimeSpan(0, 60, 0);
+            });
 
             // Đăng kí middle ware vào DI container
             services.AddTransient<FrontMiddleware>();
@@ -51,6 +66,29 @@ namespace WebEmpty
             // Thêm EndpointRoutingMiddleware: ánh xạ Request gọi đến Endpoint (Middleware cuối)
             // phù hợp định nghĩa bởi EndpointMiddleware
             app.UseRouting();
+
+            app.Map("/ShowOptions", appOptions =>
+            {
+                appOptions.Run(async (context) =>
+                {
+
+                    StringBuilder stb = new StringBuilder();
+                    IConfiguration configuration = appOptions.ApplicationServices.GetService<IConfiguration>();
+
+                    var testoptions = configuration.GetSection("TestOptions");  // Đọc một Section trả về IConfigurationSection
+                    var opt_key1 = testoptions["opt_key1"];                  // Đọc giá trị trong Section
+                    var k1 = testoptions.GetSection("opt_key2")["k1"]; // Đọc giá trị trong Section con
+                    var k2 = configuration["TestOptions:opt_key2:k2"]; // Đọc giá trị trong Section
+
+                    stb.Append($"   TestOptions.opt_key1:  {opt_key1}\n");
+                    stb.Append($"TestOptions.opt_key2.k1:  {k1}\n");
+                    stb.Append($"TestOptions.opt_key2.k2:  {k2}\n");
+
+                    await context.Response.WriteAsync(stb.ToString());
+
+
+                });
+            });
 
             app.UseEndpoints(endpoints =>
             {
