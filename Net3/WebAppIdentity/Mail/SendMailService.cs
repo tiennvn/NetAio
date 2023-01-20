@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using MimeKit;
 using System.Threading.Tasks;
 
 namespace WebAppIdentity.Mail
@@ -37,16 +38,18 @@ namespace WebAppIdentity.Mail
             logger.LogDebug("send mail to: " + email);
             logger.LogDebug("send mail subject: " + subject);
             logger.LogDebug("send mail htmlMessage: " + htmlMessage);
+            var message = new MimeMessage();
+            message.Sender = new MailboxAddress(mailSettings.DisplayName, mailSettings.Mail);
+            message.From.Add(new MailboxAddress(mailSettings.DisplayName, mailSettings.Mail));
+            message.To.Add(MailboxAddress.Parse(email));
+            message.Subject = subject;
 
-            //var message = new MimeMessage();
-            //message.Sender = new MailboxAddress(mailSettings.DisplayName, mailSettings.Mail);
-            //message.From.Add(new MailboxAddress(mailSettings.DisplayName, mailSettings.Mail));
-            //message.To.Add(MailboxAddress.Parse(email));
-            //message.Subject = subject;
+            var builder = new BodyBuilder();
+            builder.HtmlBody = htmlMessage;
+            message.Body = builder.ToMessageBody();
 
-            //var builder = new BodyBuilder();
-            //builder.HtmlBody = htmlMessage;
-            //message.Body = builder.ToMessageBody();
+            logger.LogDebug("send mail message: {@message} " + message);
+
 
             //// dùng SmtpClient của MailKit
             //using var smtp = new MailKit.Net.Smtp.SmtpClient();
