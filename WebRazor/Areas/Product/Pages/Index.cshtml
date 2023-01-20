@@ -10,3 +10,23 @@
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
+<p class="text-danger">Sin góc @Math.PI radian là @Math.Sin(Math.PI/2)</p>
+<p class="text-primary">Tổng quả 5 và 9 là @(5 + 9)</p>
+
+@Html.Raw("<p>Xin chào</p>")
+
+@{
+    List<String> products = new List<string> {
+        "Iphone",
+        "Laptop",
+        "CPU",
+    };
+
+    <h2>Danh sách sản phẩm</h2>
+    <ul>
+        @foreach (var product in products)
+        {
+            <li>Sản phẩm @product</li>
+        }
+    </ul>
+}
