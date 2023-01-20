@@ -17,7 +17,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrpcService", "GrpcService\
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OlderVersion", "OlderVersion", "{50308C0A-43A3-4DB1-9074-9879478EDE7A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebEmpty", "OlderVersion\WebEmpty\WebEmpty.csproj", "{91658470-6C2E-45B4-9586-9A80FD024454}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebEmpty", "OlderVersion\WebEmpty\WebEmpty.csproj", "{91658470-6C2E-45B4-9586-9A80FD024454}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebRazor", "WebRazor\WebRazor.csproj", "{A815A7B7-07E6-46F1-89EE-AD7782900707}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,12 +55,17 @@ Global
 		{91658470-6C2E-45B4-9586-9A80FD024454}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{91658470-6C2E-45B4-9586-9A80FD024454}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{91658470-6C2E-45B4-9586-9A80FD024454}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A815A7B7-07E6-46F1-89EE-AD7782900707}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A815A7B7-07E6-46F1-89EE-AD7782900707}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A815A7B7-07E6-46F1-89EE-AD7782900707}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A815A7B7-07E6-46F1-89EE-AD7782900707}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{91658470-6C2E-45B4-9586-9A80FD024454} = {50308C0A-43A3-4DB1-9074-9879478EDE7A}
+		{A815A7B7-07E6-46F1-89EE-AD7782900707} = {50308C0A-43A3-4DB1-9074-9879478EDE7A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {061EC94D-B3D5-4BB2-9800-C05B8F064004}
