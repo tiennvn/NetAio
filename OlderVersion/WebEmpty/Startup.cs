@@ -9,10 +9,12 @@ namespace WebEmpty
 {
     public class Startup
     {
+        IServiceCollection _services;
         // Đăng ký các dịch vụ sử dụng bởi ứng dụng, services là một DI container
         // Xem: https://xuanthulab.net/dependency-injection-di-trong-c-voi-servicecollection.html
         public void ConfigureServices(IServiceCollection services)
         {
+            _services = services;
             services.AddDistributedMemoryCache();       // Thêm dịch vụ dùng bộ nhớ lưu cache (session sử dụng dịch vụ này)
             services.AddSession();                      // Thêm  dịch vụ Session, dịch vụ này cunng cấp Middleware: 
 
@@ -120,13 +122,27 @@ namespace WebEmpty
                 });
             });
 
-
-            app.Run(async (HttpContext context) =>
+            app.Map("/allservice", app01 =>
             {
-                context.Response.StatusCode = StatusCodes.Status404NotFound;
-                await context.Response.WriteAsync("Page not found!");
-            });
+                app01.Run(async (context) =>
+                {
 
+                    var result = "<body>";
+
+                    foreach (var service in _services)
+                    {
+                        string src = service.ServiceType.Name.ToString() + "-----" +
+                        service.Lifetime.ToString() + "-----" +
+                        service.ServiceType.FullName + "</br>";
+
+                        result += src;
+
+                    }
+
+                    result += "</body>";
+                    await context.Response.WriteAsync(result);
+                });
+            });
 
             // EndPoint(3)  app.Run tham số là hàm delegate tham số là HttpContex
             // - nó tạo điểm cuối của pipeline.
