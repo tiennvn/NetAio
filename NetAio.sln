@@ -23,6 +23,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp", "Net6\ConsoleA
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspEmpty", "Net6\AspEmpty\AspEmpty.csproj", "{29A7E887-8463-43B0-9566-8F8AA0C2465B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAppIdentity", "Net3\WebAppIdentity\WebAppIdentity.csproj", "{53B7AC64-9E47-4645-BA9E-0775B477D860}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,6 +63,10 @@ Global
 		{29A7E887-8463-43B0-9566-8F8AA0C2465B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{29A7E887-8463-43B0-9566-8F8AA0C2465B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{29A7E887-8463-43B0-9566-8F8AA0C2465B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53B7AC64-9E47-4645-BA9E-0775B477D860}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53B7AC64-9E47-4645-BA9E-0775B477D860}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53B7AC64-9E47-4645-BA9E-0775B477D860}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53B7AC64-9E47-4645-BA9E-0775B477D860}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -74,6 +80,7 @@ Global
 		{DF114518-2A6B-4A37-AD46-3F8EDC557407} = {D91819CE-663B-439B-9F1C-FAB58E9F628A}
 		{B250E755-B181-44A9-B045-FAA4AE0A8807} = {D91819CE-663B-439B-9F1C-FAB58E9F628A}
 		{29A7E887-8463-43B0-9566-8F8AA0C2465B} = {D91819CE-663B-439B-9F1C-FAB58E9F628A}
+		{53B7AC64-9E47-4645-BA9E-0775B477D860} = {D7A5771E-0D60-45E6-8313-1E5F46EDAA08}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0622FDCC-9CC9-4676-A5D8-6F36B6361DF8}
