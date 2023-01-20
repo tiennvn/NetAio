@@ -1,9 +1,6 @@
-﻿using MailKit.Security;
-using Microsoft.AspNetCore.Identity.UI.Services;
+﻿using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using MimeKit;
-using System;
 using System.Threading.Tasks;
 
 namespace WebAppIdentity.Mail
@@ -37,39 +34,43 @@ namespace WebAppIdentity.Mail
 
         public async Task SendEmailAsync(string email, string subject, string htmlMessage)
         {
-            var message = new MimeMessage();
-            message.Sender = new MailboxAddress(mailSettings.DisplayName, mailSettings.Mail);
-            message.From.Add(new MailboxAddress(mailSettings.DisplayName, mailSettings.Mail));
-            message.To.Add(MailboxAddress.Parse(email));
-            message.Subject = subject;
+            logger.LogDebug("send mail to: " + email);
+            logger.LogDebug("send mail subject: " + subject);
+            logger.LogDebug("send mail htmlMessage: " + htmlMessage);
 
-            var builder = new BodyBuilder();
-            builder.HtmlBody = htmlMessage;
-            message.Body = builder.ToMessageBody();
+            //var message = new MimeMessage();
+            //message.Sender = new MailboxAddress(mailSettings.DisplayName, mailSettings.Mail);
+            //message.From.Add(new MailboxAddress(mailSettings.DisplayName, mailSettings.Mail));
+            //message.To.Add(MailboxAddress.Parse(email));
+            //message.Subject = subject;
 
-            // dùng SmtpClient của MailKit
-            using var smtp = new MailKit.Net.Smtp.SmtpClient();
+            //var builder = new BodyBuilder();
+            //builder.HtmlBody = htmlMessage;
+            //message.Body = builder.ToMessageBody();
 
-            try
-            {
-                smtp.Connect(mailSettings.Host, mailSettings.Port, SecureSocketOptions.StartTls);
-                smtp.Authenticate(mailSettings.Mail, mailSettings.Password);
-                await smtp.SendAsync(message);
-            }
-            catch (Exception ex)
-            {
-                // Gửi mail thất bại, nội dung email sẽ lưu vào thư mục mailssave
-                System.IO.Directory.CreateDirectory("mailssave");
-                var emailsavefile = string.Format(@"mailssave/{0}.eml", Guid.NewGuid());
-                await message.WriteToAsync(emailsavefile);
+            //// dùng SmtpClient của MailKit
+            //using var smtp = new MailKit.Net.Smtp.SmtpClient();
 
-                logger.LogInformation("Lỗi gửi mail, lưu tại - " + emailsavefile);
-                logger.LogError(ex.Message);
-            }
+            //try
+            //{
+            //    smtp.Connect(mailSettings.Host, mailSettings.Port, SecureSocketOptions.StartTls);
+            //    smtp.Authenticate(mailSettings.Mail, mailSettings.Password);
+            //    await smtp.SendAsync(message);
+            //}
+            //catch (Exception ex)
+            //{
+            //    // Gửi mail thất bại, nội dung email sẽ lưu vào thư mục mailssave
+            //    System.IO.Directory.CreateDirectory("mailssave");
+            //    var emailsavefile = string.Format(@"mailssave/{0}.eml", Guid.NewGuid());
+            //    await message.WriteToAsync(emailsavefile);
 
-            smtp.Disconnect(true);
+            //    logger.LogInformation("Lỗi gửi mail, lưu tại - " + emailsavefile);
+            //    logger.LogError(ex.Message);
+            //}
 
-            logger.LogInformation("send mail to: " + email);
+            //smtp.Disconnect(true);
+
+            //logger.LogInformation("send mail to: " + email);
 
         }
     }
