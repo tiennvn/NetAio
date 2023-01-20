@@ -1,12 +1,14 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System;
 using WebAppIdentity.DbContext;
+using WebAppIdentity.Mail;
 using WebAppIdentity.Models;
 
 namespace WebAppIdentity
@@ -23,6 +25,13 @@ namespace WebAppIdentity
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddOptions();                                        // Kích hoạt Options
+            var mailsettings = Configuration.GetSection("MailSettings");  // đọc config
+            services.Configure<MailSettings>(mailsettings);               // đăng ký để Inject
+
+            // Đăng ký dịch vụ Mail
+            services.AddTransient<IEmailSender, SendMailService>();
+
             // Đăng ký AppDbContext
             services.AddDbContext<AppDbContext>(options =>
             {
