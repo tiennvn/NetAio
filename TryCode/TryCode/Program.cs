@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             Console.WriteLine("Hello, World!");
-            RunCode.Run();
+            TryDelegate.Run();
         }
     }
 }
