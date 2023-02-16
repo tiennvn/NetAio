@@ -33,6 +33,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcClient", "Grpc\GrpcClie
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grpc.Contract", "Grpc\Grpc.Contract\Grpc.Contract.csproj", "{2CDFD38A-B81D-4798-B275-7FDDA27A5725}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TryCode", "TryCode", "{C9255E3D-EF07-4F1D-B962-52116C380908}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TryCode", "TryCode\TryCode\TryCode.csproj", "{1FA7786C-1A88-4C4C-9204-6DA50CDC5087}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -84,6 +87,10 @@ Global
 		{2CDFD38A-B81D-4798-B275-7FDDA27A5725}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2CDFD38A-B81D-4798-B275-7FDDA27A5725}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2CDFD38A-B81D-4798-B275-7FDDA27A5725}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FA7786C-1A88-4C4C-9204-6DA50CDC5087}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FA7786C-1A88-4C4C-9204-6DA50CDC5087}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FA7786C-1A88-4C4C-9204-6DA50CDC5087}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FA7786C-1A88-4C4C-9204-6DA50CDC5087}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -100,6 +107,7 @@ Global
 		{53B7AC64-9E47-4645-BA9E-0775B477D860} = {D7A5771E-0D60-45E6-8313-1E5F46EDAA08}
 		{8862B1A2-CD18-40DC-839D-3F8CC034C261} = {4FFA5127-C2F9-4F66-911D-E8DF6AF2DED3}
 		{2CDFD38A-B81D-4798-B275-7FDDA27A5725} = {4FFA5127-C2F9-4F66-911D-E8DF6AF2DED3}
+		{1FA7786C-1A88-4C4C-9204-6DA50CDC5087} = {C9255E3D-EF07-4F1D-B962-52116C380908}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0622FDCC-9CC9-4676-A5D8-6F36B6361DF8}
