@@ -15,3 +15,4 @@ Console.WriteLine("Hello, World!");
 var input = new InputClass() { IsActive = true, Name = "Tien", Value = "Admin" };
 
 MyClass.MyMethod("test string", 12345, true, input);
+//MyClass.Run("Tét");

@@ -9,11 +9,8 @@ public class InterceptorAttribute : Attribute, IMethodDecorator
     {
         Console.WriteLine("Before method execution");
         Log.Information("instance {@instance}", instance);
-        //var paramss = method.;
-        //foreach (var param2 in paramss)
-        //{
-        //    Log.Information("param2 {@param2}", param2);
-        //}
+        var declaringType = method.DeclaringType;
+        Log.Information("declaringType {@declaringType}", declaringType);
 
         foreach (var arg in args)
         {
