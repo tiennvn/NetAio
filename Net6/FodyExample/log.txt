@@ -1,0 +1,85 @@
+2023-06-22 15:21:57.644 +07:00 [INF] instance null
+2023-06-22 15:24:04.677 +07:00 [INF] instance null
+2023-06-22 15:24:22.532 +07:00 [INF] instance null
+2023-06-22 15:24:47.790 +07:00 [INF] instance null
+2023-06-22 15:24:47.807 +07:00 [INF] instance "Void MyMethod()"
+2023-06-22 15:24:47.809 +07:00 [INF] instance {@instance}
+2023-06-22 15:25:03.082 +07:00 [INF] instance null
+2023-06-22 15:25:03.099 +07:00 [INF] method "Void MyMethod()"
+2023-06-22 15:25:03.102 +07:00 [INF] args {@args}
+2023-06-22 15:27:31.686 +07:00 [INF] instance null
+2023-06-22 15:27:31.702 +07:00 [INF] args {@args}
+2023-06-22 15:28:27.690 +07:00 [INF] instance null
+2023-06-22 15:28:27.706 +07:00 [INF] param2 {"ParameterType":"System.String","Name":"test","HasDefaultValue":false,"DefaultValue":{"$type":"DBNull"},"RawDefaultValue":{"$type":"DBNull"},"MetadataToken":134217734,"Attributes":"None","Member":"Void MyMethod(System.String, Int32, Boolean)","Position":0,"IsIn":false,"IsLcid":false,"IsOptional":false,"IsOut":false,"IsRetval":false,"CustomAttributes":[],"$type":"RuntimeParameterInfo"}
+2023-06-22 15:28:27.721 +07:00 [INF] param2 {"ParameterType":"System.Int32","Name":"number","HasDefaultValue":false,"DefaultValue":{"$type":"DBNull"},"RawDefaultValue":{"$type":"DBNull"},"MetadataToken":134217735,"Attributes":"None","Member":"Void MyMethod(System.String, Int32, Boolean)","Position":1,"IsIn":false,"IsLcid":false,"IsOptional":false,"IsOut":false,"IsRetval":false,"CustomAttributes":[],"$type":"RuntimeParameterInfo"}
+2023-06-22 15:28:27.730 +07:00 [INF] param2 {"ParameterType":"System.Boolean","Name":"isRight","HasDefaultValue":false,"DefaultValue":{"$type":"DBNull"},"RawDefaultValue":{"$type":"DBNull"},"MetadataToken":134217736,"Attributes":"None","Member":"Void MyMethod(System.String, Int32, Boolean)","Position":2,"IsIn":false,"IsLcid":false,"IsOptional":false,"IsOut":false,"IsRetval":false,"CustomAttributes":[],"$type":"RuntimeParameterInfo"}
+2023-06-22 15:28:27.736 +07:00 [INF] args test string
+2023-06-22 15:33:26.079 +07:00 [INF] instance null
+2023-06-22 15:33:26.096 +07:00 [INF] param2 {"ParameterType":"System.String","Name":"test","HasDefaultValue":false,"DefaultValue":{"$type":"DBNull"},"RawDefaultValue":{"$type":"DBNull"},"MetadataToken":134217734,"Attributes":"None","Member":"Void MyMethod(System.String, Int32, Boolean)","Position":0,"IsIn":false,"IsLcid":false,"IsOptional":false,"IsOut":false,"IsRetval":false,"CustomAttributes":[],"$type":"RuntimeParameterInfo"}
+2023-06-22 15:33:26.108 +07:00 [INF] param2 {"ParameterType":"System.Int32","Name":"number","HasDefaultValue":false,"DefaultValue":{"$type":"DBNull"},"RawDefaultValue":{"$type":"DBNull"},"MetadataToken":134217735,"Attributes":"None","Member":"Void MyMethod(System.String, Int32, Boolean)","Position":1,"IsIn":false,"IsLcid":false,"IsOptional":false,"IsOut":false,"IsRetval":false,"CustomAttributes":[],"$type":"RuntimeParameterInfo"}
+2023-06-22 15:33:26.115 +07:00 [INF] param2 {"ParameterType":"System.Boolean","Name":"isRight","HasDefaultValue":false,"DefaultValue":{"$type":"DBNull"},"RawDefaultValue":{"$type":"DBNull"},"MetadataToken":134217736,"Attributes":"None","Member":"Void MyMethod(System.String, Int32, Boolean)","Position":2,"IsIn":false,"IsLcid":false,"IsOptional":false,"IsOut":false,"IsRetval":false,"CustomAttributes":[],"$type":"RuntimeParameterInfo"}
+2023-06-22 15:33:26.121 +07:00 [INF] args test string
+2023-06-22 15:33:52.135 +07:00 [INF] instance null
+2023-06-22 15:33:52.151 +07:00 [INF] param2 {"ParameterType":"System.String","Name":"test","HasDefaultValue":false,"DefaultValue":{"$type":"DBNull"},"RawDefaultValue":{"$type":"DBNull"},"MetadataToken":134217734,"Attributes":"None","Member":"Void MyMethod(System.String, Int32, Boolean)","Position":0,"IsIn":false,"IsLcid":false,"IsOptional":false,"IsOut":false,"IsRetval":false,"CustomAttributes":[],"$type":"RuntimeParameterInfo"}
+2023-06-22 15:33:52.165 +07:00 [INF] param2 {"ParameterType":"System.Int32","Name":"number","HasDefaultValue":false,"DefaultValue":{"$type":"DBNull"},"RawDefaultValue":{"$type":"DBNull"},"MetadataToken":134217735,"Attributes":"None","Member":"Void MyMethod(System.String, Int32, Boolean)","Position":1,"IsIn":false,"IsLcid":false,"IsOptional":false,"IsOut":false,"IsRetval":false,"CustomAttributes":[],"$type":"RuntimeParameterInfo"}
+2023-06-22 15:33:52.173 +07:00 [INF] param2 {"ParameterType":"System.Boolean","Name":"isRight","HasDefaultValue":false,"DefaultValue":{"$type":"DBNull"},"RawDefaultValue":{"$type":"DBNull"},"MetadataToken":134217736,"Attributes":"None","Member":"Void MyMethod(System.String, Int32, Boolean)","Position":2,"IsIn":false,"IsLcid":false,"IsOptional":false,"IsOut":false,"IsRetval":false,"CustomAttributes":[],"$type":"RuntimeParameterInfo"}
+2023-06-22 15:33:52.179 +07:00 [INF] args test string
+2023-06-22 15:34:01.326 +07:00 [INF] instance null
+2023-06-22 15:34:01.342 +07:00 [INF] param2 {"ParameterType":"System.String","Name":"test","HasDefaultValue":false,"DefaultValue":{"$type":"DBNull"},"RawDefaultValue":{"$type":"DBNull"},"MetadataToken":134217734,"Attributes":"None","Member":"Void MyMethod(System.String, Int32, Boolean)","Position":0,"IsIn":false,"IsLcid":false,"IsOptional":false,"IsOut":false,"IsRetval":false,"CustomAttributes":[],"$type":"RuntimeParameterInfo"}
+2023-06-22 15:34:01.357 +07:00 [INF] param2 {"ParameterType":"System.Int32","Name":"number","HasDefaultValue":false,"DefaultValue":{"$type":"DBNull"},"RawDefaultValue":{"$type":"DBNull"},"MetadataToken":134217735,"Attributes":"None","Member":"Void MyMethod(System.String, Int32, Boolean)","Position":1,"IsIn":false,"IsLcid":false,"IsOptional":false,"IsOut":false,"IsRetval":false,"CustomAttributes":[],"$type":"RuntimeParameterInfo"}
+2023-06-22 15:34:01.364 +07:00 [INF] param2 {"ParameterType":"System.Boolean","Name":"isRight","HasDefaultValue":false,"DefaultValue":{"$type":"DBNull"},"RawDefaultValue":{"$type":"DBNull"},"MetadataToken":134217736,"Attributes":"None","Member":"Void MyMethod(System.String, Int32, Boolean)","Position":2,"IsIn":false,"IsLcid":false,"IsOptional":false,"IsOut":false,"IsRetval":false,"CustomAttributes":[],"$type":"RuntimeParameterInfo"}
+2023-06-22 15:34:01.373 +07:00 [INF] args test string
+2023-06-22 15:35:41.692 +07:00 [INF] instance null
+2023-06-22 15:35:41.708 +07:00 [INF] param2 {"ParameterType":"System.String","Name":"test","HasDefaultValue":false,"DefaultValue":{"$type":"DBNull"},"RawDefaultValue":{"$type":"DBNull"},"MetadataToken":134217734,"Attributes":"None","Member":"Void MyMethod(System.String, Int32, Boolean)","Position":0,"IsIn":false,"IsLcid":false,"IsOptional":false,"IsOut":false,"IsRetval":false,"CustomAttributes":[],"$type":"RuntimeParameterInfo"}
+2023-06-22 15:35:41.723 +07:00 [INF] param2 {"ParameterType":"System.Int32","Name":"number","HasDefaultValue":false,"DefaultValue":{"$type":"DBNull"},"RawDefaultValue":{"$type":"DBNull"},"MetadataToken":134217735,"Attributes":"None","Member":"Void MyMethod(System.String, Int32, Boolean)","Position":1,"IsIn":false,"IsLcid":false,"IsOptional":false,"IsOut":false,"IsRetval":false,"CustomAttributes":[],"$type":"RuntimeParameterInfo"}
+2023-06-22 15:35:41.731 +07:00 [INF] param2 {"ParameterType":"System.Boolean","Name":"isRight","HasDefaultValue":false,"DefaultValue":{"$type":"DBNull"},"RawDefaultValue":{"$type":"DBNull"},"MetadataToken":134217736,"Attributes":"None","Member":"Void MyMethod(System.String, Int32, Boolean)","Position":2,"IsIn":false,"IsLcid":false,"IsOptional":false,"IsOut":false,"IsRetval":false,"CustomAttributes":[],"$type":"RuntimeParameterInfo"}
+2023-06-22 15:35:41.738 +07:00 [INF] args test string
+2023-06-22 15:36:03.632 +07:00 [INF] Hello, Tien!
+2023-06-22 15:36:03.648 +07:00 [INF] instance null
+2023-06-22 15:36:03.650 +07:00 [INF] param2 {"ParameterType":"System.String","Name":"test","HasDefaultValue":false,"DefaultValue":{"$type":"DBNull"},"RawDefaultValue":{"$type":"DBNull"},"MetadataToken":134217734,"Attributes":"None","Member":"Void MyMethod(System.String, Int32, Boolean)","Position":0,"IsIn":false,"IsLcid":false,"IsOptional":false,"IsOut":false,"IsRetval":false,"CustomAttributes":[],"$type":"RuntimeParameterInfo"}
+2023-06-22 15:36:03.665 +07:00 [INF] param2 {"ParameterType":"System.Int32","Name":"number","HasDefaultValue":false,"DefaultValue":{"$type":"DBNull"},"RawDefaultValue":{"$type":"DBNull"},"MetadataToken":134217735,"Attributes":"None","Member":"Void MyMethod(System.String, Int32, Boolean)","Position":1,"IsIn":false,"IsLcid":false,"IsOptional":false,"IsOut":false,"IsRetval":false,"CustomAttributes":[],"$type":"RuntimeParameterInfo"}
+2023-06-22 15:36:03.673 +07:00 [INF] param2 {"ParameterType":"System.Boolean","Name":"isRight","HasDefaultValue":false,"DefaultValue":{"$type":"DBNull"},"RawDefaultValue":{"$type":"DBNull"},"MetadataToken":134217736,"Attributes":"None","Member":"Void MyMethod(System.String, Int32, Boolean)","Position":2,"IsIn":false,"IsLcid":false,"IsOptional":false,"IsOut":false,"IsRetval":false,"CustomAttributes":[],"$type":"RuntimeParameterInfo"}
+2023-06-22 15:36:03.680 +07:00 [INF] args test string
+2023-06-22 15:37:18.157 +07:00 [INF] Hello, Tien!
+2023-06-22 15:37:18.175 +07:00 [INF] instance null
+2023-06-22 15:37:18.177 +07:00 [INF] param2 {"ParameterType":"System.String","Name":"test","HasDefaultValue":false,"DefaultValue":{"$type":"DBNull"},"RawDefaultValue":{"$type":"DBNull"},"MetadataToken":134217734,"Attributes":"None","Member":"Void MyMethod(System.String, Int32, Boolean)","Position":0,"IsIn":false,"IsLcid":false,"IsOptional":false,"IsOut":false,"IsRetval":false,"CustomAttributes":[],"$type":"RuntimeParameterInfo"}
+2023-06-22 15:37:18.191 +07:00 [INF] param2 {"ParameterType":"System.Int32","Name":"number","HasDefaultValue":false,"DefaultValue":{"$type":"DBNull"},"RawDefaultValue":{"$type":"DBNull"},"MetadataToken":134217735,"Attributes":"None","Member":"Void MyMethod(System.String, Int32, Boolean)","Position":1,"IsIn":false,"IsLcid":false,"IsOptional":false,"IsOut":false,"IsRetval":false,"CustomAttributes":[],"$type":"RuntimeParameterInfo"}
+2023-06-22 15:37:18.199 +07:00 [INF] param2 {"ParameterType":"System.Boolean","Name":"isRight","HasDefaultValue":false,"DefaultValue":{"$type":"DBNull"},"RawDefaultValue":{"$type":"DBNull"},"MetadataToken":134217736,"Attributes":"None","Member":"Void MyMethod(System.String, Int32, Boolean)","Position":2,"IsIn":false,"IsLcid":false,"IsOptional":false,"IsOut":false,"IsRetval":false,"CustomAttributes":[],"$type":"RuntimeParameterInfo"}
+2023-06-22 15:37:18.206 +07:00 [INF] param2 test string
+2023-06-22 15:37:18.206 +07:00 [INF] param2 12345
+2023-06-22 15:37:18.207 +07:00 [INF] param2 true
+2023-06-22 15:39:19.782 +07:00 [INF] Hello, Tien!
+2023-06-22 15:39:19.798 +07:00 [INF] instance null
+2023-06-22 15:39:19.800 +07:00 [INF] param2 "System.String" test string
+2023-06-22 15:39:19.802 +07:00 [INF] param2 "System.Int32" 12345
+2023-06-22 15:39:19.803 +07:00 [INF] param2 "System.Boolean" true
+2023-06-22 15:41:25.123 +07:00 [INF] Hello, Tien!
+2023-06-22 15:41:25.138 +07:00 [INF] instance null
+2023-06-22 15:41:25.142 +07:00 [INF] param2 "System.String" test string
+2023-06-22 15:41:25.145 +07:00 [INF] param2 "System.Int32" 12345
+2023-06-22 15:41:25.146 +07:00 [INF] param2 "System.Boolean" true
+2023-06-22 15:41:25.147 +07:00 [INF] param2 "FodyExample.InputClass" {"Name":"Tien","Value":"Admin","IsActive":true,"$type":"InputClass"}
+2023-06-22 15:44:34.863 +07:00 [INF] Hello, Tien!
+2023-06-22 15:44:34.880 +07:00 [INF] instance null
+2023-06-22 15:44:34.884 +07:00 [INF] param2 "System.String" test string
+2023-06-22 15:44:34.887 +07:00 [INF] param2 "System.Int32" 12345
+2023-06-22 15:44:34.888 +07:00 [INF] param2 "System.Boolean" true
+2023-06-22 15:44:34.889 +07:00 [INF] param2 "FodyExample.InputClass" {"Name":"Tien","Value":"Admin","IsActive":true,"$type":"InputClass"}
+2023-06-22 15:48:53.003 +07:00 [INF] Hello, Tien!
+2023-06-22 15:48:53.019 +07:00 [INF] instance null
+2023-06-22 15:48:53.022 +07:00 [INF] param2 "System.String" test string
+2023-06-22 15:48:53.024 +07:00 [INF] param2 "System.Int32" 12345
+2023-06-22 15:48:53.025 +07:00 [INF] param2 "System.Boolean" true
+2023-06-22 15:48:53.026 +07:00 [INF] param2 "FodyExample.InputClass" {"Name":"Tien","Value":"Admin","IsActive":true,"$type":"InputClass"}
+2023-06-22 15:49:41.058 +07:00 [INF] Hello, Tien!
+2023-06-22 15:49:41.075 +07:00 [INF] instance null
+2023-06-22 15:49:41.078 +07:00 [INF] param2 "System.String" test string
+2023-06-22 15:49:41.080 +07:00 [INF] param2 "System.Int32" 12345
+2023-06-22 15:49:41.081 +07:00 [INF] param2 "System.Boolean" true
+2023-06-22 15:49:41.083 +07:00 [INF] param2 "FodyExample.InputClass" {"Name":"Tien","Value":"Admin","IsActive":true,"$type":"InputClass"}
+2023-06-22 15:50:34.492 +07:00 [INF] Hello, Tien!
+2023-06-22 15:50:34.509 +07:00 [INF] instance null
+2023-06-22 15:50:34.511 +07:00 [INF] param2 "System.String" test string
+2023-06-22 15:50:34.513 +07:00 [INF] param2 "System.Int32" 12345
+2023-06-22 15:50:34.514 +07:00 [INF] param2 "System.Boolean" true
+2023-06-22 15:50:34.515 +07:00 [INF] param2 "FodyExample.InputClass" {"Name":"Tien","Value":"Admin","IsActive":true,"$type":"InputClass"}
